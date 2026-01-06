@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6FA8772A-0353-4B86-80AC-ABC540256BE7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Projeto.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Projeto.Teste.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Project2.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Projeto">
+        <MSBuild Projects="Projeto.dproj"/>
+    </Target>
+    <Target Name="Projeto:Clean">
+        <MSBuild Projects="Projeto.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Projeto:Make">
+        <MSBuild Projects="Projeto.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Projeto_Teste">
+        <MSBuild Projects="Projeto.Teste.dproj"/>
+    </Target>
+    <Target Name="Projeto_Teste:Clean">
+        <MSBuild Projects="Projeto.Teste.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Projeto_Teste:Make">
+        <MSBuild Projects="Projeto.Teste.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project2">
+        <MSBuild Projects="Project2.dproj"/>
+    </Target>
+    <Target Name="Project2:Clean">
+        <MSBuild Projects="Project2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project2:Make">
+        <MSBuild Projects="Project2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Projeto;Projeto_Teste;Project2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Projeto:Clean;Projeto_Teste:Clean;Project2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Projeto:Make;Projeto_Teste:Make;Project2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

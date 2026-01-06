@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/06/23 17:15:51.000.531,=C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/06/23 17:16:36.000.606,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Projeto.Principal.pas</Transaction>
+    <Transaction>2025/06/23 17:16:36.000.606,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Projeto.Principal.dfm</Transaction>
+    <Transaction>2025/06/23 17:16:44.000.933,C:\Users\Gabriel\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Projeto.dproj</Transaction>
+    <Transaction>2025/06/23 17:17:02.000.895,=C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Unit1.pas</Transaction>
+    <Transaction>2025/06/23 17:17:37.000.144,C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Unit1.pas=C:\Users\Gabriel\Desktop\TesteUnitarios\UnitariosAcad\Pessoa.pas</Transaction>
+  </Transactions>
+</BorlandProject>
