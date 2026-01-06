@@ -29,10 +29,10 @@ pipeline {
     }
   }
 
-  post {
-    always {
-      archiveArtifacts artifacts: 'TestResults.xml', fingerprint: true
-      junit allowEmptyResults: true, testResults: 'TestResults.xml'
-    }
+post {
+  always {
+    archiveArtifacts allowEmptyArchive: true, artifacts: 'TestResults.xml', fingerprint: true
+    junit allowEmptyResults: true, testResults: 'TestResults.xml'
   }
+}
 }
